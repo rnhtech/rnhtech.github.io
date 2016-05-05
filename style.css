@@ -1,0 +1,140 @@
+/*
+	FONTS
+*/
+	@import url(https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext);
+	@import url(https://fonts.googleapis.com/css?family=Lora&subset=latin,latin-ext,cyrillic);
+	@import url(https://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext);
+/*
+	NAVBAR
+*/
+nav{
+	opacity: 0.8;
+	border: none !important;
+}
+
+.navbar-brand{
+	color: #FFFFFF !important;
+	font-family: 'Francois One', sans-serif;
+	font-weight: 350;
+	font-size: 40px;
+}
+
+.navbar-brand a{
+	padding-right: 1px;
+}
+.navbar-brand span{
+	padding-right: 10px;
+	color: #ff4081;
+	letter-spacing: -1px;
+}
+
+.navbar-collapse ul li a{
+	font-size: 22px;
+	padding: 20px 12px;
+	color: #FFFFFF !important;
+	font-family:'Oswald', sans-serif;
+}
+
+.navbar-collapse a:hover{
+	font-size: 30px;
+	color:   #c51162 !important; 
+}
+
+.active a{
+	opacity: 0.8;
+	color: #FFFFFF;
+	opacity: 1;	background-color: #ff4081 !important;
+}
+
+/*
+	FOOTER
+*/
+footer{
+	background-color: #212121 !important;
+	padding: 100px;
+}
+footer p{
+	color: #FFFFFF !important;
+	font-size: 20px;
+}
+
+/*
+	MAIN CONTENT 
+*/
+.welcome-content{
+	padding: 85px 0;
+	background: #ffffff url("./images/purple-background.jpg") no-repeat fixed center;
+	background-size: auto 1024px
+}
+.welcome{
+	padding: 140px 0;
+	font-family: 'Times New Roman', sans-serif;
+}
+
+.welcome h3{
+	font-size: 50px;
+	padding-bottom: 40px;
+	color: #c51162;
+	font-weight: bold;
+	font-family:'Oswald', sans-serif;
+}
+
+.welcome a{
+	padding: 20px 50px;
+	color: white;
+	font-size: 30px;
+	font-family: 'Times New Roman';
+	font-weight: bold;
+	background-color: #c51162;
+}
+
+.welcome a:hover{
+	color: #FFFFFF;
+	font-size: 50px;
+	background-color: #ff4081;
+}
+
+.main-content{
+	margin-top: 5px;
+	margin-bottom: 60px;
+	font-size: 20px;
+	font-family: 'Times New Roman';
+}
+
+.section-heading{
+	font-size: 40px;
+	font-weight: bold;
+	font-family:'Oswald', sans-serif;
+	color: #212121;
+	padding-bottom: 20px;
+}
+section{
+	margin-top: 40px;
+	padding: 50px;
+}
+
+.main-content i{
+	font-family:'Lora', sans-serif;
+}
+.panel-title{
+	font-size: 30px;
+	font-weight: bold;
+	font-family:'Oswald', sans-serif;
+	color: #FFFFFF;
+}
+
+.panel-heading{
+	background-color: #673ab7 !important;
+	color: #FFFFFF;
+}
+
+.panel-btn{
+	background-color: #ff4081;
+	color: #FFFFFF;
+}
+
+.divider{
+	background-color: #B6B6B6;
+	border-radius: 2px;
+	border: 1px solid #B6B6B6;
+}
