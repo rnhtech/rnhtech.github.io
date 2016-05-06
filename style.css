@@ -64,7 +64,7 @@ footer p{
 .welcome-content{
 	padding: 85px 0;
 	background: #ffffff url("./images/purple-background.jpg") no-repeat fixed center;
-	background-size: auto 1024px
+	
 }
 .welcome{
 	padding: 140px 0;
@@ -74,7 +74,8 @@ footer p{
 .welcome h3{
 	font-size: 50px;
 	padding-bottom: 40px;
-	color: #c51162;
+	text-shadow: 3px 3px 4px #c51163;
+	color: #FFFFFF;
 	font-weight: bold;
 	font-family:'Oswald', sans-serif;
 }
@@ -128,6 +129,9 @@ section{
 	color: #FFFFFF;
 }
 
+.panel{
+	box-shadow: 5.5px 5.5px grey;
+}
 .panel-btn{
 	background-color: #ff4081;
 	color: #FFFFFF;
