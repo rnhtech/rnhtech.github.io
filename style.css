@@ -131,6 +131,7 @@ section{
 
 .panel{
 	box-shadow: 5.5px 5.5px grey;
+	height: 230px;
 }
 .panel-btn{
 	background-color: #ff4081;
