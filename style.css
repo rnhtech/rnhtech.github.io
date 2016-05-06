@@ -50,12 +50,28 @@ nav{
 	FOOTER
 */
 footer{
+	border-top: 6px solid #c51163;
 	background-color: #212121 !important;
-	padding: 100px;
+	padding: 80px;
 }
 footer p{
 	color: #FFFFFF !important;
 	font-size: 20px;
+	font-family: 'Francois One', sans-serif;
+}
+
+footer h3{
+	color: #c51163 !important;
+	font-size: 30px;
+	font-family:'Oswald', sans-serif;
+
+}
+
+.fa{
+	color: #fff;
+    text-shadow: 1px 1px 1px #B6B6B6;
+    font-size: 2.0em; 
+    margin-bottom: 10px;
 }
 
 /*
@@ -80,6 +96,13 @@ footer p{
 	font-family:'Oswald', sans-serif;
 }
 
+@keyframes animated-bg {
+    0%   {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px grey;}
+    25%  {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px purple;}
+    50%  {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px #ff6081;}
+    75%  {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px grey;}
+    100% {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px #ff4081;}
+}
 .welcome a{
 	padding: 20px 50px;
 	color: white;
@@ -87,6 +110,9 @@ footer p{
 	font-family: 'Times New Roman';
 	font-weight: bold;
 	background-color: #c51162;
+	transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
 }
 
 .welcome a:hover{
@@ -100,6 +126,7 @@ footer p{
 	margin-bottom: 60px;
 	font-size: 20px;
 	font-family: 'Times New Roman';
+
 }
 
 .section-heading{
@@ -133,6 +160,11 @@ section{
 	box-shadow: 5.5px 5.5px grey;
 	height: 230px;
 }
+
+.panel:hover{
+	animation-name: animated-bg;
+	animation-duration: 5s;
+}
 .panel-btn{
 	background-color: #ff4081;
 	color: #FFFFFF;
@@ -142,4 +174,8 @@ section{
 	background-color: #B6B6B6;
 	border-radius: 2px;
 	border: 1px solid #B6B6B6;
+}
+
+.project-img{
+	height: 50px;
 }
