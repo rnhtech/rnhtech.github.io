@@ -85,6 +85,7 @@ footer h3{
 	padding: 5% 0;
 	background: #ffffff url("./images/purple-background.jpg") no-repeat center center fixed;
 	background-size: cover;
+	min-height: 100%;
 }
 .welcome{
 	padding: 10% 0;
@@ -106,6 +107,18 @@ footer h3{
     50%  {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px #ff6081;}
     75%  {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px grey;}
     100% {background-color: #ff6081; color: #FFFFFF; box-shadow: 6px 6px #ff4081;}
+}
+
+@keyframes animated-start{
+	from{left:0px;}
+	to {left: 300px;}
+}
+
+h3{
+	animation-name: animated-start 
+	animation-duration:3s
+	animation-iteration-count: 1;
+	transition: all .55s ease-in;
 }
 .welcome a{
 	padding: 20px 50px;
@@ -171,7 +184,6 @@ section{
 
 .panel{
 	box-shadow: 5.5px 5.5px grey;
-	height: 230px;
 }
 
 .panel:hover{
