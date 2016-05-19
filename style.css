@@ -38,12 +38,17 @@ nav{
 .navbar-collapse a:hover{
 	font-size: 30px;
 	color:   #c51162 !important; 
+	border-bottom: 3px solid black;
 }
 
 .active a{
 	opacity: 0.8;
 	color: #FFFFFF;
 	opacity: 1;	background-color: #ff4081 !important;
+}
+
+.active a{
+
 }
 
 /*
@@ -81,11 +86,15 @@ footer h3{
 /*
 	MAIN CONTENT 
 */
+html, body{
+	height: 100%;
+	width: 100%
+}
 .welcome-content{
 	padding: 5% 0;
 	background: #ffffff url("./images/purple-background.jpg") no-repeat center center fixed;
 	background-size: cover;
-	min-height: 100%;
+	height: 100%;
 }
 .welcome{
 	padding: 10% 0;
@@ -110,25 +119,57 @@ footer h3{
 }
 
 @keyframes animated-start{
-	from{left:0px;}
-	to {left: 300px;}
+	from{top:-200px;}
+	to {top: 0px;}
 }
 
-h3{
-	animation-name: animated-start 
-	animation-duration:3s
-	animation-iteration-count: 1;
-	transition: all .55s ease-in;
+@keyframes animated-start2{
+	from{left:-200px;}
+	to {left: 0px;}
 }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animated-start{
+	from{top:0px;}
+	to {top: 300px;}
+}
+
+#intro{
+	 position: relative;
+    -webkit-animation: animated-start 1.5s ease-in;  
+    animation: animated-start 1.5s ease-in;	
+}
+
+/*
+#intro::before{ 
+	transition:visibility 1s, opacity 1s;
+	position: relative;
+	 -webkit-animation: animated-start 1.5s ease-in-outs;    
+	 animation: animated-start 1.5s ease-in;
+ 
+}
+*/
+#intro2{
+	position: relative;
+	-webkit-animation: animated-start2 1.5s ease-in;
+	animation: animated-start2 1.5s ease-in;
+    animation-delay: .1s;
+     animation-fill-mode: inherit;
+}
+
 .welcome a{
+
 	padding: 20px 50px;
 	color: white;
 	font-size: 30px;
 	font-family: 'Times New Roman';
 	font-weight: bold;
-	background-color: #c51162;
+	background: -moz-linear-gradient(#ff4081,purple);
+	background: -webkit-linear-gradient(#ff4081,purple);
+	background: linear-gradient(#ff4081,purple);
+	border: 2px solid purple;
 	transition-property: font-size;
-    transition-duration: 2s;
+    transition-duration: 1.3s;
     transition-timing-function: linear;
 }
 
@@ -206,5 +247,5 @@ section{
 }
 
 .project-img{
-	height: 50px;
+	height: 100px;
 }
