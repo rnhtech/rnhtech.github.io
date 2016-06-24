@@ -36,11 +36,13 @@ nav{
 }
 
 .navbar-collapse a:hover{
-	font-size: 30px;
 	color: #c51162 !important; 
 	border-bottom: 3px solid black;
 }
 
+.dropdown-menu{
+	background-color: black;
+}
 .active a{
 	opacity: 0.8;
 	color: #FFFFFF;
@@ -234,7 +236,7 @@ section{
 .panel{
 	box-shadow: 5.5px 5.5px grey;
 }
-
+	13
 .panel:hover{
 	animation-name: animated-bg;
 	animation-duration: 5s;
